@@ -12,36 +12,36 @@ This serves to document some of my study of computer vision. Meant to be used as
 
 [Udacity Intro to Computer Vision-ud810](https://www.udacity.com/course/introduction-to-computer-vision--ud810)
 
-
+images/ud810/
 ### Perspective Projection
 To describe projection conveniently in math terms, we place the center of projection at the origin and put the image plane in front of it to avoid dealing with the fact that a real camera inverts the image. This also means that y direction is positive in up direction which is opposite of normal image processing.
 
-<img src="./projection_coordinate_system_big.png" width="500" height="250"/>
+<img src="./images/ud810/projection_coordinate_system_big.png" width="500" height="250"/>
 
 Next figure shows how to use matrix formulation with homogeneous coordinates.
 
-<img src="./Perspective_Projection.png" width="500" height="250"/>
+<img src="./images/ud810/Perspective_Projection.png" width="500" height="250"/>
 
 Where $(u,v)$ represents the coordinates in the image of some point $(x,y,z)$ out in the world projected through a projection with focal length of $f$. So we convert to $(u,v)$ when we need to work with an image.
 
 ### Extrinsic and Intrinsic Parameter matrix
 Extrinsic parameter matrix transforms from world view to camera view.
 
-<img src="./Rigid_Transformation.png" width="500" height="250"/>
+<img src="./images/ud810/Rigid_Transformation.png" width="500" height="250"/>
 
 Then using homogeneous coordinates
 
-<img src="./Rigid_Transformation_Homogenous.png" width="500" height="250"/>
+<img src="./images/ud810/Rigid_Transformation_Homogenous.png" width="500" height="250"/>
 
 Examples of Rotation Matrx R:
 
-<img src="./Rotation_Matrix_R.png" width="500" height="250"/>
+<img src="./images/ud810/Rotation_Matrix_R.png" width="500" height="250"/>
 
 
 #### Stereo system geometry for depth measurement
 The geometry for co-planar images (taken from [Udacity Intro to Computer Vision-ud810](https://www.udacity.com/course/introduction-to-computer-vision--ud810) is shown here
 
-<img src="./Stereo_geometry_depth.png" width="500" height="250"/>
+<img src="./images/ud810/Stereo_geometry_depth.png" width="500" height="250"/>
 
 The  term  $x_l-x_r$ is known as disparity.
 
