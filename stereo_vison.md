@@ -16,7 +16,7 @@ This serves to document some of my study of computer vision. Meant to be used as
 ### Perspective Projection
 To describe projection conveniently in math terms, we place the center of projection at the origin and put the image plane in front of it to avoid dealing with the fact that a real camera inverts the image. This also means that y direction is positive in up direction which is opposite of normal image processing.
 
-<img src="./projection_coordinate_system_big.png" alt="Drawing" style="width: 200px;"/>
+<img src="./projection_coordinate_system_big.png" width="400" height="200"/>
 
 
 ![alt text][figure1]
