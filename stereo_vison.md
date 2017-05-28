@@ -16,27 +16,34 @@ This serves to document some of my study of computer vision. Meant to be used as
 ### Perspective Projection
 To describe projection conveniently in math terms, we place the center of projection at the origin and put the image plane in front of it to avoid dealing with the fact that a real camera inverts the image. This also means that y direction is positive in up direction which is opposite of normal image processing.
 
-<img src="./projection_coordinate_system_big.png" width="400" height="200"/>
+<img src="./projection_coordinate_system_big.png" width="500" height="250"/>
 
-
-![alt text][figure1]
 Next figure shows how to use matrix formulation with homogeneous coordinates.
-![alt text][figure1a]
+
+<img src="./Perspective_Projection.png" width="500" height="250"/>
+
 Where $(u,v)$ represents the coordinates in the image of some point $(x,y,z)$ out in the world projected through a projection with focal length of $f$. So we convert to $(u,v)$ when we need to work with an image.
 
 ### Extrinsic and Intrinsic Parameter matrix
 Extrinsic parameter matrix transforms from world view to camera view.
-![alt text][Rigid Transformation]
+
+<img src="./Rigid_Transformation.png" width="500" height="250"/>
+
 Then using homogeneous coordinates
-![alt text][Rigid Transformation Homgenous]
+
+<img src="./Rigid_Transformation_Homogenous.png" width="500" height="250"/>
+
 Examples of Rotation Matrx R:
-![Rotation Matrix R]
+
+<img src="./Rotation_Matrix_R.png" width="500" height="250"/>
+
 
 #### Stereo system geometry for depth measurement
-The geometry for co-planar images (taken from [Udacity Intro to Computer Vision-ud810](https://www.udacity.com/course/introduction-to-computer-vision--ud810) is shown here ![alt text][figure2]
+The geometry for co-planar images (taken from [Udacity Intro to Computer Vision-ud810](https://www.udacity.com/course/introduction-to-computer-vision--ud810) is shown here
+
+<img src="./Stereo_geometry_depth.png" width="500" height="250"/>
 
 The  term  $x_l-x_r$ is known as disparity.
-
 
 
 #### Basic Idea of extracting depth from stereo images
